@@ -1,0 +1,57 @@
+{
+  "name": "@asindotdev/cli",
+  "version": "0.1.0",
+  "description": "Official command-line interface for the Asin Amazon price tracking API.",
+  "type": "module",
+  "bin": {
+    "asin": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { force: true, recursive: true })\"",
+    "format:check": "prettier --check .",
+    "prepack": "npm run build",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "author": "Asin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asindotdev/asin-cli.git"
+  },
+  "homepage": "https://github.com/asindotdev/asin-cli#readme",
+  "bugs": {
+    "url": "https://github.com/asindotdev/asin-cli/issues"
+  },
+  "keywords": [
+    "cli",
+    "command-line",
+    "asin",
+    "amazon-api",
+    "price-tracking",
+    "price-history",
+    "asin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@asindotdev/sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
