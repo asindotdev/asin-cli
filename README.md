@@ -14,14 +14,14 @@ Every documented endpoint is a command — **11 commands** — and `request` rea
 ## Install
 
 ```sh
-npm install --global @asindotdev/cli
+npm install --global @asindev/cli
 asin --help
 ```
 
 Or run it without installing:
 
 ```sh
-npx @asindotdev/cli --help
+npx @asindev/cli --help
 ```
 
 ## Configure your API key
@@ -100,7 +100,7 @@ asin search-amazon --query 'wireless earbuds' | jq .
 
 ## Built on the SDK
 
-The CLI uses the official [Node.js SDK](https://github.com/asindotdev/asin-node) (`@asindotdev/sdk`). Use the SDK directly for programmatic access.
+The CLI uses the official [Node.js SDK](https://github.com/asindotdev/asin-node) (`@asindev/sdk`). Use the SDK directly for programmatic access.
 
 ## License
 

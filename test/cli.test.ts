@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { AsinClient, type AsinFetch } from "@asindotdev/sdk";
+import { AsinClient, type AsinFetch } from "@asindev/sdk";
 
 import { runCli, type ClientFactory } from "../src/cli.js";
 import { COMMANDS } from "../src/commands.js";

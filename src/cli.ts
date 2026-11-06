@@ -4,7 +4,7 @@ import {
   AsinError,
   type ApiResponse,
   type AsinClientOptions,
-} from "@asindotdev/sdk";
+} from "@asindev/sdk";
 
 import { coerce, looseValue, normalize, parseArgs } from "./args.js";
 import { COMMANDS } from "./commands.js";

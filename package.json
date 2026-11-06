@@ -1,5 +1,5 @@
 {
-  "name": "@asindotdev/cli",
+  "name": "@asindev/cli",
   "version": "0.1.0",
   "description": "Official command-line interface for the Asin Amazon price tracking API.",
   "type": "module",
@@ -46,7 +46,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@asindotdev/sdk": "^0.1.0"
+    "@asindev/sdk": "^0.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
